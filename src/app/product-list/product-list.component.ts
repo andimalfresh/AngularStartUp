@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/core'
 
 import { products } from '../products';
 
@@ -9,6 +10,9 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
+
+  constructor (
+  ){}
 
   share() {
     window.alert('The product has been shared!');
